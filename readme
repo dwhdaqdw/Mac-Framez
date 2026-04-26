@@ -1,0 +1,121 @@
+# Mac Framez
+
+**Mac Framez** is a fast, clean, and powerful slow-motion video interpolation app built exclusively for macOS. Powered by RIFE AI frame interpolation and FFmpeg, it lets you turn any video into buttery smooth slow motion with a beautiful, easy-to-use interface.
+
+---
+
+## Features
+
+### Core
+- **AI Frame Interpolation** — Uses RIFE to generate new frames between existing ones, creating ultra-smooth slow motion
+- **2x to 8x Frame Multiplier** — Choose how many frames to generate per original frame
+- **Slow Motion Modes** — Normal Speed, 2x, 4x, and 8x Slowmo output
+- **Final Playback FPS Calculator** — Shows exactly what FPS your output will play at before you render
+
+### Queue System
+- **Batch Queue** — Add multiple videos and render them all one after another automatically
+- **Drag & Drop** — Drop videos or entire folders straight into the queue
+- **Per-File Settings** — Right-click any file in the queue to set its own multiplier, speed, format, audio, CRF, and more — independently from global settings
+- **Queue Reordering** — Drag files to reorder them before rendering
+- **Reveal in Finder** — Right-click any queue item to open its source file in Finder
+
+### Export Settings
+- **Output Formats** — MP4, MKV, MOV, AVI, WebM, ProRes MOV, PNG Sequence, JPG Sequence
+- **Audio Modes** — No Audio, Copy Original Audio, Stretch Audio for Slowmo
+- **Hardware Acceleration** — Uses Apple's VideoToolbox hardware encoder for 3–5x faster encoding on Mac (MP4, MKV, MOV)
+- **Advanced Export** — Manual CRF quality control and encoder preset (fast / medium / slow) for power users
+- **Overwrite Mode** — Choose to save as a new file or replace existing output
+
+### Presets
+- **Save Presets** — Save your favorite settings as named presets
+- **Load Presets** — One-click to restore any saved preset
+- **Delete Presets** — Remove presets you no longer need
+
+### Render Stats
+- **Live FPS Counter** — See how fast RIFE is processing frames in real time
+- **Smart ETA** — Human-readable time remaining (e.g. 2m 34s) with total queue ETA when multiple files are queued
+- **Live Progress Bar** — Per-file and overall progress tracking
+- **Render Activity Log** — Full log of every render stage, status, and output path
+
+### Render History
+- **History Panel** — Every render is automatically saved to a local database with file name, settings used, output size, render time, and status
+- **Search** — Filter history by filename, format, or status
+- **Per-Entry Delete** — Remove individual entries or clear all history at once
+
+### UI / UX
+- **Animated Queue Cards** — Smooth hover animations on queue items with fade-in remove button
+- **Video Preview** — Thumbnail preview of the selected file in the queue
+- **Estimated Output Size** — Realistic file size estimate before rendering based on resolution, FPS, format, and CRF
+- **macOS Notifications** — Get a native notification when each render finishes or if one fails
+- **Dark Theme** — Deep dark blue/purple theme designed for video editors
+
+---
+
+## Installation
+
+1. Download `MacFramez.dmg`
+2. Open the DMG
+3. Drag **Mac Framez** into your Applications folder
+4. Right-click the app → **Open** the first time (required for unsigned apps on macOS)
+5. Done — no Python, no Terminal, no extra installs needed
+
+**Requirements:** macOS 12.0 or later (Apple Silicon or Intel)
+
+---
+
+## How to Use
+
+1. Drag your video files into the queue or click **Add Files**
+2. Select an **Output Folder**
+3. Set your **Input FPS**, **Multiplier**, and **Slow Motion speed**
+4. Choose your **Format** and **Audio** settings
+5. Hit **Start**
+
+> **Tip:** Right-click any file in the queue to set different settings just for that file
+
+---
+
+## Credits
+
+### AI Model
+- **RIFE — Real-Time Intermediate Flow Estimation**
+  Developed by Zhewei Hu, Tianhao Qi, Bing Zheng, Jiaya Jia
+  ncnn Vulkan port by [nihui](https://github.com/nihui/rife-ncnn-vulkan)
+  Licensed under MIT License
+
+### Video Processing
+- **FFmpeg** — Cross-platform multimedia framework
+  [https://ffmpeg.org](https://ffmpeg.org)
+
+### Built With
+- [PySide6](https://doc.qt.io/qtforpython/) — Qt for Python UI framework
+- [PyInstaller](https://pyinstaller.org) — Python app bundler
+
+---
+
+## Developer
+
+Built by **[@MythVfxx](https://x.com/MythVfxx)**
+Follow on X for updates, new releases, and more tools
+
+---
+
+## Why I Built This
+
+Flowframes is an amazing tool but it doesn't have a native macOS app that actually works well on modern Macs. I got tired of dealing with compatibility issues and decided to build something from scratch that feels at home on Mac — fast, clean, and just works. I did the best I could to match what Flowframes offers and then some, and I'll keep improving it over time.
+
+**This is just version 1.0** — new versions with more features and improvements are coming. If you run into any bugs, have feature requests, or just want to say what's up, hit me on Twitter and I'll get back to you and fix things as fast as I can.
+
+---
+
+## Support & Bug Reports
+
+Found a bug? Have a suggestion? Want a feature added?
+
+Hit me on X → **[@MythVfxx](https://x.com/MythVfxx)**
+
+I'll fix it right away.
+
+---
+
+*Mac Framez is a free, independent macOS app. Not affiliated with Flowframes or any commercial product.*
